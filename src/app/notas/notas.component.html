@@ -1,0 +1,9 @@
+<div id="notas">
+<p>Nome: {{nome}}</p>
+<p>1ª Nota: {{ nota01 }}</p>
+<p>2ª Nota {{ nota02 }}</p>
+<p>Média: {{ media }}</p>
+<p *ngIf="situacao; then aprovado else reprovado"></p>
+<ng-template #aprovado>Situação: <i style="color:green">Aprovado</i></ng-template>
+<ng-template #reprovado>Situação: <i style="color: red">Reprovado</i></ng-template>
+</div>

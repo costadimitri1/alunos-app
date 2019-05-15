@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'alunos-app';
+  values = '';
+
+  onKey(event: any) {// without type info}
+    this.values += event.target.value + ' | ';
+  }
 }
